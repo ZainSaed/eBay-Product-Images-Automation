@@ -1,0 +1,10 @@
+# Product data — keep private
+frame.png
+skus.csv
+
+# Generated/cached files
+output/
+raw_downloads/
+
+# Python
+.venv/
