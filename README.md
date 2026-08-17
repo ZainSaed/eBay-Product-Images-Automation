@@ -22,8 +22,7 @@ For each SKU + product link in `skus.csv`, this script:
 ## Usage
 1. Export your Google Sheet as CSV (File > Download > CSV), replacing `skus.csv`.
    Make sure the columns are named exactly `sku` and `link`.
-2. Replace `frame.png` with the correct frame for the brand/region you're running
-   (this repo is set up for Breville NZD).
+2. Replace `frame.png` with the correct frame for the brand/region you're running.
 3. Run:
    ```
    python generate_product_images.py
@@ -42,7 +41,7 @@ product looks too big/small or too high/low in the frame:
 ## Notes
 - Raw downloaded images are cached in `raw_downloads/` so re-running the
   script won't re-download images you already have.
-- For a different brand (e.g. DeLonghi), duplicate this folder, swap in that
+- For a different brand , duplicate this folder, swap in that
   brand's `frame.png`, and update the image-finding logic in
   `find_product_image_url()` if that site doesn't use an `og:image` meta tag
   the same way Breville does.
